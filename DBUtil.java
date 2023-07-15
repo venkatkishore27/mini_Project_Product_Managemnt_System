@@ -12,7 +12,7 @@ public class DBUtil {
 		try {
 		DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 
-		conn = DriverManager.getConnection("http://localhost/phpmyadmin/index.php?route=/database/structure&db=kishore", "localhost", "root");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/kishore", "kishore", "root");
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
